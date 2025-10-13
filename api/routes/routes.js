@@ -2,13 +2,6 @@
 const express = require('express');
 const router = express.Router();
 
-// contactFormEmail API
-const contactFormEmailController = require('../controllers/contactFormEmailController');
-router.post(
-  '/api/send-contact-form-email',
-  contactFormEmailController.sendContactEmail
-);
-
 // checkEligibility API
 const { checkEligibility } = require('../controllers/eligibilityController');
 router.post('/api/check-eligibility', checkEligibility);

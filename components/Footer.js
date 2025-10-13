@@ -15,8 +15,6 @@ const footerLinks = [
     comingSoon: true,
   },
   { href: '/about', label: 'About' },
-
-  { href: '/contact', label: 'Contact Us' },
 ];
 
 const Footer = () => {
