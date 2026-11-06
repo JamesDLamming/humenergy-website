@@ -1,11 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import DefaultButton from './DefaultButton';
-import SignupForm from './SignupForm';
-import Modal from './Modal';
 
 const Hero = () => {
-  const [modalVisibility, setModalVisibility] = useState(false);
-
   return (
     <div className="section-spacing">
       <section
@@ -40,29 +36,14 @@ const Hero = () => {
                 </DefaultButton>
               </div>
               <div>
-                <DefaultButton
-                  onClick={() => setModalVisibility(true)}
-                  className="bg-gray-200 border-2 border-main !text-main "
-                >
-                  Join the waitlist
-                </DefaultButton>
+                <span className="inline-block px-4 py-2 rounded-md border-2 border-main bg-gray-200 font-semibold text-main opacity-70 cursor-default">
+                  Waitlist closed
+                </span>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <Modal
-        visible={modalVisibility}
-        onCancel={() => setModalVisibility(false)}
-        buttonText="Submit"
-        hideButton
-      >
-        <SignupForm
-          isInModal={true}
-          onFormSubmitted={() => setModalVisibility(false)}
-        ></SignupForm>
-      </Modal>
     </div>
   );
 };

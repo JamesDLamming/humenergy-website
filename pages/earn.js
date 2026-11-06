@@ -1,15 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Nav from '../components/Nav';
 import SEO from '../components/SEO';
 import { TypeAnimation } from 'react-type-animation';
 import DefaultButton from '../components/DefaultButton';
-import Modal from '../components/Modal';
-import SignupForm from '../components/SignupForm';
 import Footer from '../components/Footer';
 
 export default function earn() {
-  const [modalVisibility, setModalVisibility] = useState(false);
-
   return (
     <>
       <SEO title="Hum Energy - Earn" />
@@ -71,17 +67,6 @@ export default function earn() {
               <div className="col-span-1"></div>
             </div>
           </section>
-          <Modal
-            visible={modalVisibility}
-            onCancel={() => setModalVisibility(false)}
-            buttonText="Submit"
-            hideButton
-          >
-            <SignupForm
-              isInModal={true}
-              onFormSubmitted={() => setModalVisibility(false)}
-            ></SignupForm>
-          </Modal>
         </div>
         <Footer />
       </div>

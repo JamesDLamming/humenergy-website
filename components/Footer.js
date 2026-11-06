@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import SignupBox from './SignupBox';
 import Link from 'next/link';
 
 const footerLinks = [
@@ -68,7 +67,9 @@ const Footer = () => {
               </div>
 
               <div className="items-top">
-                <SignupBox></SignupBox>
+                <p className="py-2 font-semibold text-mainSecondary">
+                  Waitlist closed
+                </p>
               </div>
 
               <div className="flex space-x-6 mt-6">
@@ -185,7 +186,9 @@ const Footer = () => {
               </div>
 
               <div className="items-top">
-                <SignupBox></SignupBox>
+                <p className="py-2 font-semibold text-mainSecondary">
+                  Waitlist closed
+                </p>
               </div>
             </div>
           </div>
