@@ -18,13 +18,6 @@ const {
 
 router.post('/api/get-manufacturers', getManufacturers);
 
-// programFormEmailRoutes
-const programFormEmailController = require('../controllers/programFormEmailController');
-router.post(
-  '/api/send-program-form-email',
-  programFormEmailController.sendContactEmail
-);
-
 // saveFormData API
 const { saveFormData } = require('../controllers/saveFormDataController');
 router.post('/api/saveFormData', saveFormData);

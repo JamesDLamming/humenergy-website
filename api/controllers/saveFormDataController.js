@@ -1,5 +1,6 @@
 const { json } = require('express');
 // const fetch = import('node-fetch');
+const { sendProgramFormEmail } = require('./programFormEmailController');
 const { accessSpreadsheet } = require('../services/googleSheetsService');
 
 async function saveFormData(req, res) {
@@ -19,22 +20,12 @@ async function saveFormData(req, res) {
         message: JSON.stringify(req.body), // Customize as needed
       };
 
-      // Make the request to the email API
-      const emailResponse = await fetch(
-        `${process.env.NEXT_PUBLIC_BASE_API_URL}/api/send-program-form-email`,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(emailData),
-        }
-      );
-
-      if (emailResponse.ok) {
+      // Send the notification email directly (no public HTTP endpoint)
+      try {
+        await sendProgramFormEmail(emailData);
         console.log('Email sent successfully');
-      } else {
-        console.error('Email sending failed:', await emailResponse.text());
+      } catch (emailError) {
+        console.error('Email sending failed:', emailError);
       }
 
       res.json(response.data); // Send back the response data to the client
