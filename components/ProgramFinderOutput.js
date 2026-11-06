@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import DefaultButton from './DefaultButton';
 import Modal from './Modal';
-import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutlined';
 import ReactGA from 'react-ga4';
 
 function ProgramFinderOutput({ data, visible }) {
