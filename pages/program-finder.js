@@ -9,7 +9,6 @@ import SingleSelector from '../components/SingleSelector';
 import Footer from '../components/Footer';
 import statesTwoLetter from '../models/statesTwoLetter';
 
-require('dotenv').config();
 
 export default function ProgramFinder() {
   const states = statesTwoLetter;
