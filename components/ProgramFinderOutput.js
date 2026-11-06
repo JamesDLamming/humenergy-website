@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import DefaultButton from './DefaultButton';
 import Modal from './Modal';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 function ProgramFinderOutput({ data, visible }) {
   const eligibleRows = data.filter((row) => row.tag === 'Eligible');

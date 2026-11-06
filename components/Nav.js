@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import DefaultButton from './DefaultButton';
-import { Loadable } from 'next/dist/server/future/route-modules/app-page/vendored/contexts/entrypoints';
 
 const navLinks = [
   {
