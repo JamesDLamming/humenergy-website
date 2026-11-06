@@ -122,7 +122,7 @@ const MultiSelector = ({
       ...provided,
       borderRadius: '0.5rem', // Tailwind's 'rounded-lg'
       boxShadow:
-        '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)', // Tailwind's 'shadow-sm'
+        '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)', // Tailwind's 'shadow-xs'
       paddingTop: '0',
       marginTop: '0',
       overflow: 'visible',
@@ -132,7 +132,7 @@ const MultiSelector = ({
       // Handle overflow within the menuList
       overflowY: 'auto', // Enable vertical scrolling
       maxHeight: '300px', // Adjust to desired max height
-      borderRadius: '0.5rem', // Maintain rounded corners
+      borderRadius: '0.5rem', // Maintain rounded-sm corners
     }),
     option: (provided, state) => ({
       ...provided,
@@ -159,7 +159,7 @@ const MultiSelector = ({
         value={selectedOptions}
         onChange={setSelectedOptions}
         styles={customStyles}
-        className={`basic-multi-select !rounded-lg !shadow-sm border-gray-400 hover:border-gray-500 ${props.className} leading-tight focus:outline-none focus:shadow-outline`}
+        className={`basic-multi-select !rounded-lg !shadow-xs border-gray-400 hover:border-gray-500 ${props.className} leading-tight focus:outline-hidden focus:shadow-outline`}
         classNamePrefix="select"
         placeholder={menuIsOpen ? placeholderOpenText : placeholderClosedText}
         onMenuOpen={() => setMenuIsOpen(true)}

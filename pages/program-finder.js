@@ -622,7 +622,7 @@ export default function ProgramFinder() {
         <Nav></Nav>
         <div className="content-container flex flex-col items-center w-full flex-grow ">
           <div className="main-content flex flex-col px-4 mx-2 w-full items-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl ">
-            <div className="p-4 px-6 sm:px-8 w-full sm:w-[28rem] mx-auto rounded-lg shadow-sm bg-white text-main  mt-10">
+            <div className="p-4 px-6 sm:px-8 w-full sm:w-[28rem] mx-auto rounded-lg shadow-xs bg-white text-main  mt-10">
               <div className="text-xl pb-2 font-black items-center text-center ">
                 Enter your details
               </div>
@@ -974,7 +974,7 @@ export default function ProgramFinder() {
                       >
                         <div className="mt-4 ">
                           <div
-                            className={`py-2 px-4 !rounded-lg !shadow-sm bg-gray-50 text-main border-gray-400 hover:border-gray-500 leading-tight focus:outline-none focus-visible:outline-none focus-visible:shadow-outline focus:shadow-outline border w-full ${
+                            className={`py-2 px-4 !rounded-lg !shadow-xs bg-gray-50 text-main border-gray-400 hover:border-gray-500 leading-tight focus:outline-hidden focus-visible:outline-hidden focus-visible:shadow-outline focus:shadow-outline border w-full ${
                               emailError ? 'border-red-500' : ''
                             }`}
                           >
@@ -982,7 +982,7 @@ export default function ProgramFinder() {
                               type="email"
                               id="email"
                               name="email"
-                              className="placeholder-main w-full bg-gray-50 focus:outline-none focus-visible:outline-none focus-visible:shadow-outline focus:shadow-outline"
+                              className="placeholder-main w-full bg-gray-50 focus:outline-hidden focus-visible:outline-hidden focus-visible:shadow-outline focus:shadow-outline"
                               placeholder="Enter email"
                               value={email}
                               onChange={(e) => {

@@ -23,7 +23,7 @@ const Nav = () => {
     setMenuOpen(!menuOpen); // creates a function that toggles menuOPen to be the opposite value
   };
   return (
-    <nav className="relative isolate z-50 shadow-sm bg-white">
+    <nav className="relative isolate z-50 shadow-xs bg-white">
       <div className="px-4 py-6 sm:px-6 lg:px-8 max-w-xl mx-auto sm:max-w-3xl lg:max-w-7xl  relative">
         <div className="flex items-center justify-between">
           {/* Hum Logo */}
@@ -67,16 +67,16 @@ const Nav = () => {
                 menuOpen && 'change'
               }`}
             >
-              <div className="bar bar1 bg-mainSecondary rounded w-full h-[5px] block mb-[5px]"></div>
-              <div className="bar bar2 bg-mainSecondary rounded w-full h-[5px] block my-[5px]"></div>
-              <div className="bar bar3 bg-mainSecondary rounded w-full h-[5px] block mt-[5px]"></div>
+              <div className="bar bar1 bg-mainSecondary rounded-sm w-full h-[5px] block mb-[5px]"></div>
+              <div className="bar bar2 bg-mainSecondary rounded-sm w-full h-[5px] block my-[5px]"></div>
+              <div className="bar bar3 bg-mainSecondary rounded-sm w-full h-[5px] block mt-[5px]"></div>
             </button>
           </div>
         </div>
       </div>
       {menuOpen && (
-        <div className="mobileMenu open shadow-sm">
-          <div className="absolute w-screen items-center flex-1 justify-center shadow-sm text-center space-y-2 z-50 bg-white  pt-2 pb-6 lg:hidden">
+        <div className="mobileMenu open shadow-xs">
+          <div className="absolute w-screen items-center flex-1 justify-center shadow-xs text-center space-y-2 z-50 bg-white  pt-2 pb-6 lg:hidden">
             {/* Mobile Links */}
             {navLinks.map(({ label, href, comingSoon }, index) => (
               <li className="flex" key={index}>
@@ -144,7 +144,7 @@ const Nav = () => {
       </style>
     </nav>
 
-    // <nav className="print:hidden z-40 fixed md:absolute top-0 w-full px-4 pt-4 flex justify-between bg-white pb-4 shadow-sm py-6 sm:px-6 lg:px-8 max-w-xl mx-auto sm:max-w-3xl lg:max-w-7xl">
+    // <nav className="print:hidden z-40 fixed md:absolute top-0 w-full px-4 pt-4 flex justify-between bg-white pb-4 shadow-xs py-6 sm:px-6 lg:px-8 max-w-xl mx-auto sm:max-w-3xl lg:max-w-7xl">
     //   <div className="flex items-center justify-between">
     //     <a
     //       href="/"
@@ -180,13 +180,13 @@ const Nav = () => {
     //         onClick={toggleMenu}
     //         className={`align-middle w-[32px] h-[25px] ${menuOpen && 'change'}`}
     //       >
-    //         <div className="bar bar1 bg-mainSecondary rounded w-full h-[5px] block mb-[5px]"></div>
-    //         <div className="bar bar2 bg-mainSecondary rounded w-full h-[5px] block my-[5px]"></div>
-    //         <div className="bar bar3 bg-mainSecondary rounded w-full h-[5px] block mt-[5px]"></div>
+    //         <div className="bar bar1 bg-mainSecondary rounded-sm w-full h-[5px] block mb-[5px]"></div>
+    //         <div className="bar bar2 bg-mainSecondary rounded-sm w-full h-[5px] block my-[5px]"></div>
+    //         <div className="bar bar3 bg-mainSecondary rounded-sm w-full h-[5px] block mt-[5px]"></div>
     //       </button>
     //     </div>
     //     {menuOpen && (
-    //       <div className="fixed shadow-sm w-full items-center flex-1 justify-center text-center space-y-2 right-0 z-50 bg-white pt-2 pb-6 px-6 lg:hidden">
+    //       <div className="fixed shadow-xs w-full items-center flex-1 justify-center text-center space-y-2 right-0 z-50 bg-white pt-2 pb-6 px-6 lg:hidden">
     //         {/* Mobile Links */}
     //         <Link
     //           href="/earn"

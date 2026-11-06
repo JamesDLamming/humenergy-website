@@ -35,7 +35,7 @@ const Modal = (props) => {
             <div className="mt-5 sm:mt-6">
               <DefaultButton
                 onClick={onCancel}
-                className="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 text-base font-medium sm:text-sm"
+                className="inline-flex justify-center w-full rounded-md border border-transparent shadow-xs px-4 py-2 text-base font-medium sm:text-sm"
               >
                 {props.buttonText || 'OK Cool'}
               </DefaultButton>

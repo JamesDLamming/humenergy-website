@@ -73,7 +73,7 @@ function ProgramFinderOutput({ data, visible }) {
         <div className="text-xl pb-2 font-black items-center  ">
           Programs you may be eligible for:
         </div>
-        <div className=" flex max-w-7xl sm:max-w-3xl md:max-w-5xl lg:max-w-7xl text-sm sm:text-base items-center  p-0    shadow-sm rounded-lg h-auto mb-4 bg-white overflow-hidden">
+        <div className=" flex max-w-7xl sm:max-w-3xl md:max-w-5xl lg:max-w-7xl text-sm sm:text-base items-center  p-0    shadow-xs rounded-lg h-auto mb-4 bg-white overflow-hidden">
           <p className="my-8 mx-auto items-center text-center">
             No programs available
           </p>
@@ -304,7 +304,7 @@ function ProgramFinderOutput({ data, visible }) {
             row['New Customers Only'] != 'Yes' && (
               <div
                 key={index}
-                className=" flex max-w-7xl sm:max-w-3xl md:max-w-5xl lg:max-w-7xl text-sm sm:text-base items-center  p-0    shadow-sm rounded-lg h-auto mb-4 bg-white overflow-hidden"
+                className=" flex max-w-7xl sm:max-w-3xl md:max-w-5xl lg:max-w-7xl text-sm sm:text-base items-center  p-0    shadow-xs rounded-lg h-auto mb-4 bg-white overflow-hidden"
               >
                 <div
                   className="h-auto
@@ -593,7 +593,7 @@ function ProgramFinderOutput({ data, visible }) {
             )
         )
       ) : (
-        <div className=" flex max-w-7xl sm:max-w-3xl md:max-w-5xl lg:max-w-7xl text-sm sm:text-base items-center  p-0    shadow-sm rounded-lg h-auto mb-4 bg-gray-100 overflow-hidden">
+        <div className=" flex max-w-7xl sm:max-w-3xl md:max-w-5xl lg:max-w-7xl text-sm sm:text-base items-center  p-0    shadow-xs rounded-lg h-auto mb-4 bg-gray-100 overflow-hidden">
           <p className="my-8 mx-auto items-center text-center">
             No programs available
           </p>
@@ -607,7 +607,7 @@ function ProgramFinderOutput({ data, visible }) {
         ineligibleRows.map((row, index) => (
           <div
             key={index}
-            className=" flex max-w-7xl sm:max-w-3xl md:max-w-5xl lg:max-w-7xl text-sm sm:text-base items-center  p-0    shadow-sm rounded-lg h-auto mb-4 bg-white overflow-hidden"
+            className=" flex max-w-7xl sm:max-w-3xl md:max-w-5xl lg:max-w-7xl text-sm sm:text-base items-center  p-0    shadow-xs rounded-lg h-auto mb-4 bg-white overflow-hidden"
           >
             <div
               className="h-auto
@@ -897,7 +897,7 @@ function ProgramFinderOutput({ data, visible }) {
           </div>
         ))
       ) : (
-        <div className=" flex max-w-7xl sm:max-w-3xl md:max-w-5xl lg:max-w-7xl text-sm sm:text-base items-center  p-0    shadow-sm rounded-lg h-auto mb-4 bg-gray-100 overflow-hidden">
+        <div className=" flex max-w-7xl sm:max-w-3xl md:max-w-5xl lg:max-w-7xl text-sm sm:text-base items-center  p-0    shadow-xs rounded-lg h-auto mb-4 bg-gray-100 overflow-hidden">
           <p className="my-8 mx-auto items-center text-center">
             No programs available
           </p>
