@@ -2,7 +2,7 @@ import React from 'react';
 import Nav from '../components/Nav';
 import SEO from '../components/SEO';
 import { TypeAnimation } from 'react-type-animation';
-import DefaultButton from '../components/DefaultButton';
+import ProgramFinderForm from '../components/ProgramFinderForm';
 import Footer from '../components/Footer';
 
 export default function earn() {
@@ -54,19 +54,11 @@ export default function earn() {
                     sleep, without impacting how you live your life
                   </h2>
                 </div>
-
-                <div className="mt-10 space-y-4">
-                  <DefaultButton
-                    onClick={() => (window.location.href = '/program-finder')}
-                    className="!text-main"
-                  >
-                    Find local programs
-                  </DefaultButton>
-                </div>
               </div>
               <div className="col-span-1"></div>
             </div>
           </section>
+          <ProgramFinderForm />
         </div>
         <Footer />
       </div>
